@@ -1,28 +1,28 @@
 .container {
-    padding-left: 16px;
-    padding-right: 16px;
-    max-width: 428px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 428px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
 .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: auto;
-    z-index: 2;
-    width: 100vw;
-    height: 100vh;
-    background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: auto;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
     
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-container {
@@ -127,7 +127,7 @@
 }
 
 .mobile-menu-tel:focus {
-    color: var(--ocean-color);
+    color: var(--color-hover);
 }
 
 .mobile-menu-email {
@@ -141,7 +141,7 @@
 }
 
 .mobile-menu-email:focus {
-    color: var(--ocean-color);
+    color: var(--color-hover);
 }
 
 .social-menu {
