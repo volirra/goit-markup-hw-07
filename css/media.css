@@ -1,15 +1,16 @@
 @media screen and (min-width: 480px) {
 .container {
-  width: 448px;
+  max-width: 428px;
 }
-}
+
 .hero {
   background-image: url(../images/hero-bg-tab.jpg)
+}
 }
 
 @media screen and (min-width: 768px) {
 .container {
-  width: 720px;
+  max-width: 720px;
 }
 
 .mobile-menu {
@@ -32,7 +33,7 @@
 
 @media screen and (min-width: 1200px) {
 .container {
-width: 1158px;
+max-width: 1158px;
 }
 .hero {
   background-image: url(../images/hero-bg.jpeg)
