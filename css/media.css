@@ -9,11 +9,20 @@
 
 @media screen and (min-width: 768px) {
 .container {
-width: 720px;
+  width: 720px;
 }
+
+.mobile-menu {
+    display: none;
+}
+.mobile-menu-open {
+    display: none;
+}
+
 .hero {
   background-image: url(../images/hero-bg.jpeg)
 }
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -35,15 +44,13 @@ width: 1158px;
 }
 }
 
-@media screen and (min-width: 768px) {
-.mobile-menu {
-    display: none;
-}
-.mobile-menu-open {
-    display: none;
-} 
-}
-@media screen and (max-width: 767px) {
+
+
+
+
+
+
+/*@media screen and (max-width: 767px) {
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -211,8 +218,6 @@ width: 1158px;
     background-color: var(--color-hover);
 }
 }
-
-
 
 /*-----Hero-----*/
 
