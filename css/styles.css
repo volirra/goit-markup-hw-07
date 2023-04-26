@@ -131,7 +131,7 @@ cursor: pointer;
 .header-logo-web {
   margin-right: 76px;
 }
-/*
+
 .header-mail {
   font-size: 16px;
   line-height: 1.5;
@@ -504,6 +504,7 @@ cursor: pointer;
 /*-----Description-----*/
 
 .description {
+  display: flex;
   width: 100%;
 }
 
@@ -529,7 +530,7 @@ cursor: pointer;
 }
 
 
-@media screen and (max-width: 1199px) and (min-width: 480px) {
+@media screen and (min-width: 480px)  and (max-width: 1199px) {
 .description-container-icon {
   display: none;
 }
@@ -625,7 +626,7 @@ cursor: pointer;
  
 /*-----Work-----*/
 
-@media screen and (max-width: 1199px) and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1199px)  {
 .work {
   display: none;
 }
@@ -678,17 +679,21 @@ cursor: pointer;
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 64px;
-  column-gap: 24px;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .team-item {
-  background-color: #fff;
+  background-color: var(--color-body);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  margin-right: 0;
+  margin-bottom: 72px;
+}
+
+.team-item:last-child {
+  margin-bottom: 0;
 }
 
 .team-title-person {
@@ -698,15 +703,15 @@ cursor: pointer;
   padding-left: 16px;
   padding-right: 16px;
   margin-right: 0;
-  background-color: #fff;
+  background-color: var(--color-body);
 }
 
 .team-title-name {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
+  text-align: center;
   color: var(--color-footer);
   margin-top: 0;
   margin-bottom: 8px;
@@ -719,7 +724,7 @@ cursor: pointer;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-address);
-  align-items: center;
+  text-align: center;
   margin: 0;
 }
 
@@ -734,13 +739,14 @@ cursor: pointer;
 }
 
 .team-soc-link {
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #f4f4fd;
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -749,6 +755,7 @@ cursor: pointer;
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: #404bbf;
+  fill: #f4f4fd;
 }
 
 @media screen and (max-width: 769px) {
@@ -758,12 +765,17 @@ cursor: pointer;
 }
 
 .team-list {
+  display: flex;
   column-gap: 24px;
   row-gap: 64px;
-
-}
 }
 
+.team-item {
+  width: calc((100% - 24px) / 2);
+}
+
+
+}
 @media screen and (min-width: 1200px) {
 .team {
   padding-top: 120px;
@@ -773,6 +785,15 @@ cursor: pointer;
 .team-list {
   display: flex;
   gap: 24px;
+}
+
+.team-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.team-title-name {
+  font-size: 20px;
+  line-height: 1.2;
 }
 }
 
@@ -851,7 +872,6 @@ margin-bottom: 72px;
 
 /*-----Footer-----*/
 
-/*@media screen and (min-width: 769px) {
 .footer {
   background: var(--color-footer);
   color: var(--color-cloud);
@@ -864,6 +884,164 @@ margin-bottom: 72px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.footer-logo-web {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-button);
+}
+
+.footer-logo-studio {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+ color: var(--color-cloud);
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-cloud);
+  margin-top: 16px;
+}
+
+
+.footer-soc {
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+.footer-soc-text {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-soc-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+background-color: #31d0aa;
+}
+
+.footer-subscribe  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subscribe-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-body);
+  margin-bottom: 16px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subscribe-input {
+  width: 100%px;
+  height: 40px;
+  border: 1px solid var(--color-body);
+  border-radius: 4px;
+  outline: none;
+  filter: drop-shadow(0px 4px 4px rgba(0 0 0 0.15));
+  padding-left: 16px;
+  background-color:var(--color-grey);
+  color: var(--color-body);
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-input:hover, 
+.subscribe-input:focus {
+border: 1px solid var(--color-hover);
+}
+
+.subscribe-input::placeholder {
+  display: flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.4;
+  align-items: center;
+  color: var(--color-body)
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  padding: 8px 24px;
+  gap: 16px;
+  color: var(--color-body)  ;
+  background-color: var(--color-button);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-plane {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+color: #fff;
+}
+
+
+@media screen and (min-width: 769px) {
+
+  .footer-container {
   padding-left: 108px;
 }
 
