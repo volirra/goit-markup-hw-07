@@ -9,6 +9,7 @@
 }
 
 @media screen and (max-width: 767px) {
+
 .mobile-menu {
   display: flex;
   flex-direction: column; 
@@ -25,11 +26,10 @@
   justify-content: space-between;
 }
 
-.menu-open-btn{
- padding: 0;
- border: 0;
- line-height: 0;
- background: transparent;
+.mobile-menu.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .mobile-menu-container {
