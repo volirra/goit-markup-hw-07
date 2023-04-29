@@ -1,5 +1,6 @@
 @media screen and (min-width: 480px) {
-.container {
+
+  .container {
   max-width: 428px;
 }
 
@@ -56,15 +57,23 @@
   stroke: #2e2f42;
   fill: #2e2f42;
 }
+
 .mobile-menu-nav {
+  padding-top: 80px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
+
 .mobile-menu-list {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .mobile-menu-item:not(:last-child) {
     margin-bottom: 40px;
 }
+
 .mobile-menu-link {
     font-weight: 700;
     font-size: 36px;
@@ -83,20 +92,23 @@
     color: #4d5ae5;
 }
 .mobile-menu-email {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #434455;
-    margin-top: 40px;
-    margin-bottom: 48px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin-top: 40px;
+  margin-bottom: 48px;
 }
+
 .mobile-menu-soc-list {
   display: flex;
 }
+
 .mobile-menu-soc-item:not(:last-child) {
   margin-right: 56px;
 }
+
 .mobile-menu-soc-link {
   width: 40px;
   height: 40px;
@@ -108,9 +120,8 @@
   fill: #f4f4fd;
   margin-bottom: 40px;
 }
-.mobile-menu-soc-icon {
 }
-}
+
 /*.mobile-menu {
   display: flex;
   flex-direction: column; 
@@ -274,8 +285,9 @@
 
 
 @media screen and (min-width: 768px) {
-.container {
-  max-width: 768px;
+
+  .container {
+  max-width: 720px;
 }
 
 .mobile-menu {
@@ -297,12 +309,15 @@
 }
 
 @media screen and (min-width: 1200px) {
-.container {
-max-width: 1158px;
+
+  .container {
+  max-width: 1158px;
 }
+
 .hero {
   background-image: url(../images/hero-bg.jpeg)
 }
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
