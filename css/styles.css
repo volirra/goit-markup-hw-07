@@ -59,6 +59,7 @@ body {
 .no-scroll {
   overflow: hidden;
 }
+
 button {
 cursor: pointer;
 }
@@ -75,17 +76,15 @@ cursor: pointer;
   padding-right: 16px;
 }
 
-
 /*-----Header-----*/
 
 .header {
-  height: 70px;
+  position: absolute;
+  width: 100%;
   background-color: var(--color-body);
-  color: var(--color-address);
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 
 .header-container {
@@ -96,7 +95,7 @@ cursor: pointer;
 .header-navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin-right: auto;
 }
 
 .header-logo-web {
@@ -118,11 +117,7 @@ cursor: pointer;
   color: var(--color-footer);
 }
 
-.header-navigation-list {
-  display: none;
-}
-
-.header-address {
+.header-navigation-list, .header-address{
   display: none;
 }
 
@@ -262,7 +257,6 @@ cursor: pointer;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
   color: var(--color-body);
   margin-bottom: 72px;
 }
@@ -294,9 +288,10 @@ cursor: pointer;
   background-color: var(--color-hover);
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px),
-  screen and (min-resolution: 192dpi) and (min-width: 769px),
-  screen and (min-resolution: 2dppx) and (min-width: 769px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+
 .hero-section {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
   url(../images/hero-bg@2x.jpg);
@@ -304,11 +299,12 @@ cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {
+
 .hero-section {
-  margin: auto;
+  /*margin: auto;
   padding-top: 188px;
   padding-bottom: 188px;
-  text-align: center;
+  text-align: center;*/
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
   url(../images/hero-bg.jpeg);
   background-repeat: no-repeat;
