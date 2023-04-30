@@ -207,11 +207,14 @@ cursor: pointer;
 /*-----Hero-----*/
 
 .hero {
+  margin: 0 auto;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg.jpeg);
+    url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -222,7 +225,7 @@ cursor: pointer;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  color: var(--color-body);
+  color: var(--color-bod);
   margin-bottom: 72px;
 }
 
@@ -266,12 +269,12 @@ cursor: pointer;
 @media screen and (min-width: 1200px) {
 
 .hero-section {
-  /*margin: auto;
+  margin: auto;
   padding-top: 188px;
   padding-bottom: 188px;
-  text-align: center;*/
+  text-align: center;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-  url(../images/hero-bg.jpeg);
+  url(../images/hero-bg-tab.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -286,7 +289,11 @@ cursor: pointer;
   url(../images/hero-bg@2x.jpg);
 }
 }
-
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+}
 .hero-button {
   margin-top: 48px;
 }
@@ -675,7 +682,6 @@ width: calc((100% - 120px) / 6);
   letter-spacing: 0.02em;
   color: var(--color-cloud);
   margin-top: 18px;
-  /*justify-content: center;*/
   text-align: center;
 }
 

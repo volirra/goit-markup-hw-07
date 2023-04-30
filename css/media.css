@@ -3,10 +3,6 @@
   .container {
   max-width: 428px;
 }
-
-.hero {
-  background-image: url(../images/hero-bg-tab.jpg)
-}
 }
 
 @media screen and (max-width: 767px) {
@@ -119,7 +115,7 @@
 
 @media screen and (min-width: 768px) {
 
-  .container {
+.container {
   max-width: 720px;
 }
 
@@ -129,32 +125,12 @@
 .mobile-menu-open {
     display: none;
 }
-
-.hero {
-  background-image: url(../images/hero-bg.jpeg)
-}
-
-.hero-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-}
 }
 
 @media screen and (min-width: 1200px) {
 
-  .container {
+.container {
   max-width: 1158px;
-}
-
-.hero {
-  background-image: url(../images/hero-bg.jpeg)
-}
-
-.hero-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
 }
 }
 
