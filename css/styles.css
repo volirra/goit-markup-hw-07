@@ -778,7 +778,6 @@ width: 168px;
   padding-left: 16px;
   background-color:var(--color-grey);
   color: var(--color-body);
-  margin-top: 16px;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -813,7 +812,6 @@ width: 168px;
   letter-spacing: 0.04em;
   cursor: pointer;
   padding: 8px 24px;
-  margin-top: 16px;
   color: var(--color-body);
   background-color: var(--color-button);
   transition-property: background-color;
@@ -899,6 +897,7 @@ border: 1px solid var(--color-hover);
  
 .footer-soc {
   margin-left: 120px;
+  margin-right: auto;
 }
 
 .footer-subscribe  {
@@ -917,6 +916,7 @@ border: 1px solid var(--color-hover);
 
 .subscribe-form {
   display: flex;
+  flex-wrap: nowrap;
   gap: 24px;
 }
 }
