@@ -711,8 +711,10 @@ width: 168px;
 }
 
 .footer-soc {
+  margin-bottom: 72px;
   margin-top: 72px;
 }
+
 .footer-soc-text {
   display: flex;
   justify-content: center;
@@ -750,9 +752,9 @@ width: 168px;
   fill: var(--color-cloud);
 }
 
-.footer-subscribe  {
+/*.footer-subscribe  {
   margin-top: 72px;
-}
+}*/
 
 .subscribe-text {
   font-weight: 500;
@@ -859,6 +861,7 @@ color: #fff;
 }
 .footer-soc {
   margin-top: 0;
+  margin-bottom: 0;
   text-align: left;
   justify-content: left;
 }
@@ -901,7 +904,6 @@ border: 1px solid var(--color-hover);
 }
 
 .footer-soc {
-  margin-top: 0;
   margin-left: 40px;
 }
 
