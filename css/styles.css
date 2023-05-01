@@ -595,6 +595,7 @@ cursor: pointer;
 }
 
 .customers-item {
+  /*width: calc((100% -16px) / 2);*/
   width: 190px;
   height: 88px;
 }
@@ -640,6 +641,7 @@ cursor: pointer;
 }
 
 .customers-item {
+ /*width: calc((100% -48px) / 3);*/
   width: 168px;
   height: 88px;
 }
@@ -656,6 +658,8 @@ cursor: pointer;
   flex-wrap: nowrap;
   gap: 24px;
 }
+/*.customers-item {
+  width: calc((100% -100px) / 5);*/
 }
 
 /*-----Footer-----*/
