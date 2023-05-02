@@ -28,8 +28,6 @@
 @media screen and (max-width: 767px) {
 
 .mobile-menu {
-  display: flex;
-  flex-direction: column; 
   position: fixed;
   top: 0;
   left: 0;
@@ -38,7 +36,9 @@
   height: 100%;
   background-color: #fff;
   padding: 24px 24px 40px 40px;
-  flex-direction: column;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -133,12 +133,6 @@
   justify-content: center;
   fill: #f4f4fd;
   margin-bottom: 40px;
-}
-
-.mob {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
 }
 }
 
