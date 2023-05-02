@@ -276,6 +276,7 @@ cursor: pointer;
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
   url(../images/hero-bg@2x.jpg);
 }
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -288,8 +289,8 @@ cursor: pointer;
 
 .hero-section {
   margin: auto;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
   text-align: center;
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
   url(../images/hero-bg-tab.jpg);
@@ -343,6 +344,7 @@ cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
+
 .description {
   display: flex;
 }
@@ -366,7 +368,7 @@ cursor: pointer;
 .description {
   display: flex;  
   padding-top: 120px;
-  padding-bottom: 0;
+  padding-bottom: 120px;
 }
 
 .description-title {
@@ -426,7 +428,7 @@ cursor: pointer;
 .work {
   display: block;
   padding-bottom: 120px;
-  padding-top: 120px;
+  padding-top: 0;
 }
 
 .work-title {
@@ -596,7 +598,6 @@ cursor: pointer;
 
 .customers-item {
   /*width: calc((100% -16px) / 2);*/
-  width: 190px;
   height: 88px;
 }
 

@@ -8,7 +8,7 @@
 @media screen and (min-width: 768px) {
 
 .container {
-  max-width: 768px;
+  max-width: 720px;
 }
 
 .mobile-menu {
@@ -136,7 +136,9 @@
 }
 
 .mob {
-position: absolute;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
 }
 }
 
