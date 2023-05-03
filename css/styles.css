@@ -274,14 +274,14 @@ cursor: pointer;
   screen and (min-resolution: 192dpi) and (min-width: 480px),
   screen and (min-resolution: 2dppx) and (min-width: 480px) {
 
-.hero-section {
+.hero {
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
   url(../images/hero-bg-mob@2x.jpg);
 }
 }
 
 @media screen and (min-width: 768px) {
-  .hero-section {
+  .hero {
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
   url(../images/hero-bg-tab.jpg);
 }
@@ -298,7 +298,7 @@ cursor: pointer;
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
-.hero-section {
+.hero {
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
   url(../images/hero-bg-tab@2.jpg);
 }
@@ -313,7 +313,7 @@ cursor: pointer;
 
 @media screen and (min-width: 1200px) {
 
-.hero-section {
+.hero {
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
@@ -324,7 +324,7 @@ cursor: pointer;
 }
 }
 
-.hero-section {
+.hero {
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -333,7 +333,7 @@ cursor: pointer;
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px){
 
-.hero-section {
+.hero {
   margin: auto;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -346,7 +346,7 @@ cursor: pointer;
 }
 }
 
-.hero-section {
+.hero {
   padding-top: 188px;
   padding-bottom: 188px;
 }
