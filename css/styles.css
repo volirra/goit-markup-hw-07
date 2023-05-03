@@ -268,13 +268,11 @@ cursor: pointer;
   background-color: var(--color-hover);
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
-
-.hero-section {
+@media screen and (min-width: 768px) {
+  .hero-section {
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-  url(../images/hero-bg@2x.jpg);
+  url(../images/hero-bg-tab.jpg);
+}
 }
 
 .hero-title {
@@ -283,9 +281,46 @@ cursor: pointer;
   line-height: 1.07;
   margin-bottom: 36px;
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+
+.hero-section {
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+  url(../images/hero-bg-tab@2.jpg);
+}
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  margin-bottom: 36px;
 }
 
 @media screen and (min-width: 1200px) {
+
+.hero-section {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+  url(../images/hero-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+}
+
+.hero-section {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px){
 
 .hero-section {
   margin: auto;
@@ -293,32 +328,31 @@ cursor: pointer;
   padding-bottom: 188px;
   text-align: center;
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-  url(../images/hero-bg-tab.jpg);
+  url(../images/hero-bg@2x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) 
-{
-
 .hero-section {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-  url(../images/hero-bg@2x.jpg);
-}
-
-.hero-button {
-  margin-top: 48px;
-}
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
 }
 
 /*-----Description-----*/
 
 .hidden {
   margin-top: 0;
+}
+
+.description-item {
+  margin-bottom: 72px;
+}
+
+.description-item:last-child {
+  margin-bottom: 0;
 }
 
 .description-title {
@@ -344,21 +378,19 @@ cursor: pointer;
 
 @media screen and (min-width: 768px) {
 
-.description {
-  display: flex;
-}
-
-.description-title {
-  text-align: start;
-}
-
 .description-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
 }
 
 .description-item {
   width: calc((100% - 24px) /2);
+}
+
+.description-item:nth-child(3) {
+  margin-bottom: 0;
 }
 }
 
@@ -389,6 +421,7 @@ cursor: pointer;
 
 .description-item {
   width: calc((100% - 72px) / 4);
+  margin-bottom: 0;
 }
 
 .description-container-icon {
@@ -818,14 +851,14 @@ cursor: pointer;
 }
 
 .footer-plane {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.04em;
-color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
 
 .plane {
@@ -834,14 +867,22 @@ color: #fff;
 
 @media screen and (min-width: 768px) {
 
-.footer-container {
+/*.footer-container {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 72px;
-  margin-left: 108px;
-}
+  width: 583px;
+}*/
  
+.footer-general {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 72px;
+  width: 560px;
+}
+
 .footer-contacts {
   text-align: left;
 }
@@ -889,10 +930,15 @@ border: 1px solid var(--color-hover);
 
 @media screen and (min-width: 1200px) {
 
-.footer-container {
+.footer-general {
   flex-wrap: nowrap;
-  margin-left: 16px;
+  justify-content: center;
+  width: 1100px;
 }
+
+/*.footer-container {
+  flex-wrap: nowrap;
+}*/
  
 .footer-soc {
   margin-left: 120px;
