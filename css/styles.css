@@ -217,8 +217,6 @@ cursor: pointer;
 }
 
 /*-----Hero-----*/
-@media screen and (min-width: 480px) {
-
 .hero {
   margin: 0 auto;
   padding-top: 112px;
@@ -231,7 +229,6 @@ cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 }
 
 .hero-title {
@@ -324,11 +321,6 @@ cursor: pointer;
 }
 }
 
-.hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
-}
-
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px){
@@ -344,11 +336,6 @@ cursor: pointer;
   background-size: cover;
   background-position: center;
 }
-}
-
-.hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 /*-----Description-----*/
@@ -392,7 +379,6 @@ cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  justify-content: center;
 }
 
 .description-item {
@@ -401,6 +387,10 @@ cursor: pointer;
 
 .description-item:nth-child(3) {
   margin-bottom: 0;
+}
+
+.description-text {
+  text-align: left;
 }
 }
 
